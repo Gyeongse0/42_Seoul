@@ -1,0 +1,6 @@
+Credentials cache: API:82CB7CAD-F311-4722-9937-DB6A38D15694
+        Principal: gyeonkim@42SEOUL.KR
+
+  Issued                Expires               Principal
+Aug 22 16:18:54 2022  Aug 23 02:18:54 2022  krbtgt/42SEOUL.KR@42SEOUL.KR
+Aug 22 16:18:55 2022  Aug 23 02:18:54 2022  HTTP/student-storage.42seoul.kr@42SEOUL.KR
