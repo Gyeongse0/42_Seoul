@@ -6,7 +6,7 @@
 /*   By: gyeonkim <gyeonkim@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/28 20:05:14 by gyeonkim          #+#    #+#             */
-/*   Updated: 2022/08/28 20:17:31 by gyeonkim         ###   ########.fr       */
+/*   Updated: 2022/08/29 23:29:11 by gyeonkim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <unistd.h>
@@ -20,6 +20,5 @@ int	ft_strlen(char *str)
 	{
 		i++;
 	}
-	i = i + '0';
 	return (i);
 }

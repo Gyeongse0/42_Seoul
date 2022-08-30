@@ -1,28 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_rev_int_tab.c                                   :+:      :+:    :+:   */
+/*   ft_sort_int_tab.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gyeonkim <gyeonkim@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/28 21:03:16 by gyeonkim          #+#    #+#             */
-/*   Updated: 2022/08/29 20:55:29 by gyeonkim         ###   ########.fr       */
+/*   Created: 2022/08/29 20:56:39 by gyeonkim          #+#    #+#             */
+/*   Updated: 2022/08/29 21:54:43 by gyeonkim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <unistd.h>
 #include <stdio.h>
 
-void	ft_rev_int_tab(int *tab, int size)
+void	ft_sort_int_tab(int *tab, int size)
 {
+	int	temp;
 	int	i;
-	int	tmp;
+	int	j;
 
-	i = 0;
-	while (i < (size / 2))
+	i = size - 1;
+	while (i > 0)
 	{
-		tmp = tab[i];
-		tab[i] = tab[size - 1 - i];
-		tab[size - 1 - i] = tmp;
-		i++;
+		j = 0;
+		while (j < i)
+		{
+			if (tab[j] > tab[j + 1])
+			{
+				temp = tab[j];
+				tab[j] = tab[j + 1];
+				tab[j + 1] = temp;
+			}
+			j++;
+		}
+		i--;
 	}
 }
